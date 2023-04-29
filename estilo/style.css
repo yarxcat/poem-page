@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Itim&display=swap');
+
+:root {
+    --fonte1: 'Abril Fatface', cursive;
+    --fonte2: 'Itim', cursive;
+
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 17px;
+    background-color:white;
+    box-shadow: 5px 5px 15px #161616;
+    border-radius: 3px;
+}
+
+html, body {
+    min-height: 95vh;
+    background-color:#8C331F;
+}
+
+
+header {
+    background-color: #591F12;
+    color: aliceblue;
+    text-align: center;
+    margin-top: -17px ;
+    border-radius: 2px;
+}
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte1);
+    font-size: 4em;
+}
+header > p {
+    padding-bottom: 50px;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover {
+    text-decoration: underline;
+    background-color: #d9b5a07c;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte2);
+    font-size: 20px;
+
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    border-radius: 4px;
+    background-color: aquamarine;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgb(0, 0, 0);
+    background-attachment: fixed;
+}
+section.imagem > p {
+    display: inline-block;
+    padding:5px;
+    text-shadow: 1px 1px 0px black;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+section#img01 {
+    background-image: url(../img/relogio2.jpg);
+    background-position: right center;
+    background-size: cover;
+    display: flex;
+
+
+}
+section#img02{
+    background-image: url(../img/sol\ \(1\).jpg);
+    background-size:cover;
+    background-position: center;
+
+}
+
+footer {
+    background-color:#591f12cc;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    padding: 5px;
+}
